@@ -15,13 +15,13 @@ int main() {
     printf("Cadastro de 5 territórios\n");
     printf("-------------------------\n");
 
-    // Laço para entrada dos dados dos territórios
+    // entrada dos dados dos territórios
     for (int i = 0; i < 5; i++) {
         printf("Território %d\n", i + 1);
 
         // Entrada do nome do território
         printf("Digite o nome do território: ");
-        // Usando scanf com %29[^\n] para ler até 29 caracteres incluindo espaços, evitando overflow
+        // Usando scanf com %29[^\n] para ler até 29 caracteres incluindo espaços.
         scanf(" %29[^\n]", territorios[i].nome);
 
         // Entrada da cor do exército
